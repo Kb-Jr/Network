@@ -1,0 +1,26 @@
+textarea{
+    height: 80px;
+
+}
+
+
+.post-date{
+    font-size: 10px;
+    color:gray;
+}
+
+.edit-label,
+.cancel-edit-label {
+    color:dodgerblue;
+}
+
+.like-count-label,
+.edit-label:hover,
+.cancel-edit-label:hover{
+    cursor: pointer;
+}
+
+.liked-post{
+    font-weight: bold;
+}
+

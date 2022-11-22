@@ -1,0 +1,24 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <div class="container m-3">
+        <h3>See Posts from People You follow</h3>
+    </div>
+
+    {% for post in posts %}
+        <div class="post-wrap-card">
+            <div class="row m-2">
+                <div class="col font-weight-bold"><a href="/user/{{ post.user }}">{{ post.user }}</a></div>
+            </div>
+            <div class="row m-2">
+                <div class="col">{{ post.content }}</div>
+            </div>
+            <div class="row m-2">
+                <div class="col post-date" >{{ post.addedOn }}</div>
+            </div>
+            <div class="row m-2">
+                <div class="col" >0 <i class="fa-solid fa-thumbs-up"></i></div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
